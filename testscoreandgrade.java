@@ -29,7 +29,7 @@ public class testscoreandgrade {
            Formatter testavg_round = new Formatter();
            testavg_round.format("%.2f", test_avg);
     
-        // flag to declare grade of average test scores
+        // if statements to declare letter grade of average test scores
              if (test_avg < 60)
                 System.out.println("Grade: F");
             else if (test_avg < 70)
@@ -45,7 +45,7 @@ public class testscoreandgrade {
 
 
         // outputting each test score and its final average
-            System.out.print("Average Test Scores: " + testavg_round);
+            System.out.print("Average of test scores: " + testavg_round);
     
         // closes everything (to avoid memory leak, im learning)
         testavg_round.close();
