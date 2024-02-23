@@ -23,5 +23,6 @@ public class restaurantbill {
       System.out.println("Tax: " + tax_amount);
       System.out.println("Tip: " + tip_amount);
       System.out.println("Total: " + meal_final);
+      input.close();
     }
 }

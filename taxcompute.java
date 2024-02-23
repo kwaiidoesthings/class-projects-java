@@ -27,7 +27,7 @@ public class taxcompute {
       
     // outputs
       System.out.println(num2);
-
+      input.close();
 }
 }
 

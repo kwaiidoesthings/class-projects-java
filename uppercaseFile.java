@@ -1,4 +1,5 @@
 //Jason Sacerio COP2800
+/* THE ONLY ACCEPTED FILE TYPES TO SUBMIT ARE .JAVA, TO WORK AROUND I SUBMITTED TWO .JAVA FILES PLEASE CONVERT THE TEST.JAVA TO A .TXT DOCUMENT OR USE OWN .TXT FILE */
 import java.util.Scanner;
 import java.io.File;
 import java.io.IOException;
@@ -38,3 +39,4 @@ public class uppercaseFile {
         System.out.print("Done!");
     }
 }
+

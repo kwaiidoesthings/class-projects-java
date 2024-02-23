@@ -14,15 +14,15 @@ public static void main(String[] args) {
 
 // while loop to repeat guessing until the user wins
     while(true){
-        System.out.printf(" Guess a Number: ", "\n");
+        System.out.printf("Guess a Number: ", "\n");
         int num = input.nextInt();
 
 // if else statement determining if its too high, too low, or if the user won the game
     if(num > randomNum){
-            System.out.printf("Too high, try again.", "\n");
+            System.out.printf("Too high, try again. %n", "\n");
     }
     else if(num < randomNum){
-            System.out.printf("Too low, try again. ", "\n");
+            System.out.printf("Too low, try again. %n", "\n");
     }
     else{
             System.out.printf("You won!", "\n");
