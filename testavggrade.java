@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class testavggrade {
 
+static void calcAverage(int[] score){
+
+}
 public static void main(String[] args) {
     int[] score = new int[5];
     Scanner input = new Scanner(System.in);
@@ -9,4 +12,10 @@ public static void main(String[] args) {
     for (int i = 0; i < 5; i++){
         System.out.print("Enter Score " + (i + 1) + ": ");
         score[i] = input.nextInt();
-    }}}
+}
+
+
+
+
+
+input.close();}}
