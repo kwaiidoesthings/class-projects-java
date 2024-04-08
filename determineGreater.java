@@ -4,18 +4,19 @@ import java.util.Scanner;
 public class determineGreater {
 
     /**
-     * Method asks user for n to use to compare the arraylist of numbers
+     * method asks user for n to use to compare the arraylist of numbers
      * @return n - number used in comparison
      */
     public int getCompareNum(){
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a number to compare: ");
         int n = input.nextInt();
+        input.close();
         return n;
     }
 
     /**
-     * Method asks user for numbers to use to compare the arraylist of numbers, ends the arraylist when user says STOP
+     * method asks user for numbers to use to compare the arraylist of numbers, ends the arraylist when user says stop
      * @return num - list of numbers entered by the user
      */
     public ArrayList<Integer> getNumberList(){
@@ -35,11 +36,12 @@ public class determineGreater {
                 }
             }
         }
+        input.close();
         return num;
     }
 
     /**
-     * Determines which numbers in arrayList are bigger than n
+     * Determines and prints which numbers in arrayList are bigger than n
      * @param n - number used in comparison
      * @param num - list of numbers to be compared
      */
@@ -52,13 +54,12 @@ public class determineGreater {
         }
     }
 
+    /* Creates an instance and calls the instance multiple times to run the program*/ 
     public static void main(String[] args) {
-        determineGreater determineGreater = new determineGreater(); // Create an instance of the class
-        ArrayList<Integer> num = determineGreater.getNumberList(); // Call instance method
-        int n = determineGreater.getCompareNum(); // Call instance method
-        determineGreater.compareTwo(n, num); // Call instance method
-
-        // Close the Scanner instance after it's no longer needed
+        determineGreater determineGreater = new determineGreater(); 
+        ArrayList<Integer> num = determineGreater.getNumberList(); 
+        int n = determineGreater.getCompareNum(); 
+        determineGreater.compareTwo(n, num); 
     }
 
 }
